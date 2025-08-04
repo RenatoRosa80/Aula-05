@@ -18,8 +18,8 @@ No exemplo o valor da hora é 5 e a quantidade de hora é 220.
   Salário Liquido                 : R$  935,00
 
 """
-valor_hora = float(input('Digite o valor da hora trabalhada'))
-qt_hora = float(input('Digite a quantidade de hora trabalhada'))
+valor_hora = float(input('Digite o valor da hora trabalhada: '))
+qt_hora = float(input('Digite a quantidade de hora trabalhada: '))
 salario_bruto = valor_hora * qt_hora
 
 #print(f'Salário Bruto: {valor_hora} * {qt_hora}        : R$ {salario_bruto}')
@@ -28,7 +28,7 @@ print('Salário Bruto:',valor_hora * qt_hora,': R$ ',salario_bruto)
 if salario_bruto <= 900:
     irtexto = 'isento'
     ir = 0  
-elif salario_bruto >900 and salario_bruto <= 1500:
+elif salario_bruto >901 and salario_bruto <= 1500:
     #ir = salario_bruto * 0.05
     irtexto = '5%'
     ir = salario_bruto * 5 / 100
